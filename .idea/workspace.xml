@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ededaebb-659a-4f91-86eb-39384f131e04" name="Default" comment="Adding file Transformations">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/FileIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/contextMeta.nt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/meta.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/FileTransform.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/QueryGetter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SparqlTransform-1.0-SNAPSHOT-jar-with-dependencies.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/Qexec.java" afterPath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/QueryTransformer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SparqlTransform-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/SparqlTransform-1.0-SNAPSHOT.jar" />
+    <list default="true" id="ededaebb-659a-4f91-86eb-39384f131e04" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/Main.java" afterPath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/SparqlCli.java" afterPath="$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/SparqlCli.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/sparql.txt" afterPath="$PROJECT_DIR$/src/main/resources/sparql.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sparql.txt" afterPath="$PROJECT_DIR$/target/classes/sparql.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -100,8 +84,8 @@
       <file leaf-file-name="FileIO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/FileIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="588">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -176,6 +160,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -970,7 +957,7 @@
       <workItem from="1531985190262" duration="19618000" />
       <workItem from="1532073247160" duration="16063000" />
       <workItem from="1532332153577" duration="2050000" />
-      <workItem from="1532338737779" duration="9240000" />
+      <workItem from="1532338737779" duration="9409000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1530864939150</created>
@@ -993,15 +980,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531726650651</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Handling files in query transformations">
+      <created>1532359006679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532359006679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142565000" />
+    <option name="totallyTimeSpent" value="142734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1023,7 +1016,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21866295" sideWeight="0.47943446" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29526463" sideWeight="0.47429305" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2114396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1108,7 +1101,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Adding file Transformations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding file Transformations" />
+    <MESSAGE value="Handling files in query transformations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handling files in query transformations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1427,8 +1421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/wdaqua/SparqlTransform/FileIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="588">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
