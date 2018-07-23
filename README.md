@@ -1,7 +1,7 @@
-# SPARQL query transformer:
-This code will transform SPARQL queries from RDF reification, N-ary relations, Singleton property, Ndfluents to Named Graphs.
+# SPARQL dataset transformer:
+This code will transform SPARQL queries based on different aproaches like(RDF reification, N-ary relations, Singleton property, Ndfluents) to Named Graphs.
 #### Example:
-This query is in RDF reification:
+This SPARQL query is based one RDF reification:
 ```
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT * WHERE{
@@ -11,7 +11,7 @@ SELECT * WHERE{
     ?st rdf:object ?o.
 }
 ```
-When converted into a named graph query the result will be :
+That SPARQL query will be transformed to a new query based on Named graph approach :
 ```
 SELECT * WHERE{GRAPH ?st {?s ?p ?o .}}
 ```
@@ -32,7 +32,10 @@ $ java -jar target\SparqlTransform-1.0-SNAPSHOT-jar-with-dependencies.jar -t "qu
 ```
 - **-q** : will take SPARQL query as an argument.
 - **-t** : will take the SPARQL query type(reification,singleton,ndfluents,nary).
-- **-d** : will take the path of the dataset that we want to query.
+- **-d** : will take the path of the dataset that we want to use.
 - **-m** : will take the metadata of the query we use it in ndfluents and n-ary relations.
+- **-qf** : will take the path of a SPARQL query file.
+- **-o** : will take a path to an output file to write the new query.
+- **-mf** : will take the path of a metadata file.
 
-You can check the web version [here](http://wdaqua-query-transformation.univ-st-etienne.fr/).
+You can check the web version [here](http://wdaqua-dataset-transformation.univ-st-etienne.fr/).

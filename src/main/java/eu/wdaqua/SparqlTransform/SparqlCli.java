@@ -11,24 +11,25 @@ public class SparqlCli {
     private String meta;
     private String queryFile;
     private String queryOut;
+    private String metaFile;
     public SparqlCli(String [] args) {
         Options options=new Options();
         Option datasetOp= new Option("d","Dataset",true,"RDF file path");
-        datasetOp.setRequired(true);
         Option qType=new Option("t","QueryType",true,"Choose: reification|ngraph|nary|singleton|ndfluents");
         qType.setRequired(true);
         Option queryOp=new Option("q","Query",true,"Your SPARQL query");
-        queryOp.setRequired(true);
-        Option queryFileOp=new Option("qf","Queryfile",true,"Your SPARQL query file");
-        Option queryOut=new Option("o","Output",true,"Your output file query");
+        Option queryFileOp=new Option("qf","Queryfile",true,"Your SPARQL query file path");
+        Option queryOut=new Option("o","Output",true,"Your output query file path");
         Option metaOp=new Option("m","Meta",true,"Your SPARQL Meta data");
-        queryOp.setRequired(true);
+        Option metaFileOp=new Option("mf","MetaFile",true,"Your meta file path");
+
         options.addOption(datasetOp);
         options.addOption(qType);
         options.addOption(queryOp);
         options.addOption(metaOp);
         options.addOption(queryFileOp);
         options.addOption(queryOut);
+        options.addOption(metaFileOp);
         CommandLineParser parser = new DefaultParser();
         HelpFormatter formatter = new HelpFormatter();
         CommandLine cmd;
@@ -46,6 +47,7 @@ public class SparqlCli {
         this.meta=cmd.getOptionValue("Meta");
         this.queryFile=cmd.getOptionValue("Queryfile");
         this.queryOut=cmd.getOptionValue("Output");
+        this.metaFile=cmd.getOptionValue("MetaFile");
 
     }
 
@@ -63,5 +65,17 @@ public class SparqlCli {
 
     public String getMeta() {
         return meta;
+    }
+
+    public String getQueryFile() {
+        return queryFile;
+    }
+
+    public String getQueryOut() {
+        return queryOut;
+    }
+
+    public String getMetaFile() {
+        return metaFile;
     }
 }

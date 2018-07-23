@@ -1,4 +1,7 @@
-select * where
-{
-?s ?p ?o.
+select * where{
+    ?o <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.emse.fr/~zimmermann/Ontologies/ndfluents.ttl#Temporal>.
+    ?so1 <http://www.emse.fr/~zimmermann/Ontologies/ndfluents.ttl#temporalPartOf> ?s1.
+    ?so2 <http://www.emse.fr/~zimmermann/Ontologies/ndfluents.ttl#temporalPartOf> ?s2.
+    ?so1 <http://www.emse.fr/~zimmermann/Ontologies/ndfluents.ttl#temporalExtent> ?o.
+    ?so2 <http://www.emse.fr/~zimmermann/Ontologies/ndfluents.ttl#temporalExtent> ?o. ?so2 ?p3 ?so1. ?so1 ?p ?so2. ?so2 ?p2 ?so1.
 }
